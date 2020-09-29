@@ -20,8 +20,8 @@ class RoomProvider extends Component {
   getData = async () => {
     const contentful = require("contentful");
     const client = contentful.createClient({
-      space: "ul7402oz2hvc",
-      accessToken: "eneY62_NfVLHpUc4vVpjeE5S28NcWBOwAQ67eGnji0Y",
+      space: process.env.REACT_APP_API_SPACE,
+      accessToken: process.env.REACT_APP_ACCESS_TOKEN,
     });
 
     try {
