@@ -30,7 +30,7 @@ class RoomProvider extends Component {
         order: "fields.capacity",
       });
       let rooms = this.formatData(response.items);
-      let featured = rooms.filter((room) => room.featured == true);
+      let featured = rooms.filter((room) => room.featured === true);
       let maxPrice = Math.max(...rooms.map((item) => item.price));
       let maxSize = Math.max(...rooms.map((item) => item.size));
       this.setState({
@@ -63,11 +63,11 @@ class RoomProvider extends Component {
   handleChange = (event) => {
     let name = event.target.name;
     let value;
-    {
+    
       event.target.type === "checkbox"
         ? (value = event.target.checked)
         : (value = event.target.value);
-    }
+    
     if (name === "capacity" || name === "maxSize" || name === "minSize") {
       value = parseInt(event.target.value);
     }

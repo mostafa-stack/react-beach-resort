@@ -6,10 +6,7 @@ export default class RoomFilter extends Component {
   static contextType = RoomContext;
   render() {
     const {
-      type,
       price,
-      capacity,
-      size,
       pets,
       breakfast,
       handleChange,

@@ -7,16 +7,16 @@ export default class RoomContainer extends Component {
   static contextType = RoomContext;
   render() {
     const { rooms, sortedRooms, loading } = this.context;
-    {
+    
       if (loading) {
         return <Loading />;
-      }
-    }
-    return (
-      <div>
-        <RoomFilter rooms={rooms} />
-        <RoomSorted sortedRooms={sortedRooms} />
-      </div>
-    );
+      }  
+      return (
+        <div>
+          <RoomFilter rooms={rooms} />
+          <RoomSorted sortedRooms={sortedRooms} />
+        </div>
+      );
+    
   }
 }

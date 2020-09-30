@@ -5,11 +5,7 @@ import Rooms from './pages/rooms/Rooms';
 import Error from './pages/error/Error';
 import SingleRoom from './pages/rooms/single-room/SingleRoom'
 import './components/Navbar'
-import {
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar';
 
 

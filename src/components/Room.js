@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import propTypes from "prop-types";
 import { RoomContext } from "../context";
 export default class Room extends Component {
   static contextType = RoomContext;
@@ -28,13 +27,5 @@ export default class Room extends Component {
         <p className="room-info">{name}</p>
       </article>
     );
-    Room.propTypes = {
-      room: propTypes.shape({
-        name: propTypes.string.isRequired,
-        slug: propTypes.string.isRequired,
-        price: propTypes.number.isRequired,
-        images: propTypes.arrayOf(propTypes.string).isRequired,
-      }),
-    };
   }
 }

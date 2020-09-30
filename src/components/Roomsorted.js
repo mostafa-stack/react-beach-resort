@@ -3,7 +3,6 @@ import Room from "./Room";
 export default class Roomsorted extends Component {
   render() {
     const { sortedRooms } = this.props;
-    {
       if (sortedRooms.length === 0) {
         return (
           <div className="empty-search">
@@ -11,7 +10,6 @@ export default class Roomsorted extends Component {
           </div>
         );
       }
-    }
     return (
       <section className="roomslist">
         <div className="roomslist-center">
