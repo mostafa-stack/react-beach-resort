@@ -100,11 +100,9 @@ class RoomProvider extends Component {
     if (price < maxPrice) {
       filterRooms = filterRooms.filter((room) => room.price <= price);
     }
-    if (minSize >= 0 && maxSize <= 1000 && minSize < maxSize) {
       filterRooms = filterRooms.filter(
         (room) => room.size >= minSize && room.size <= maxSize
       );
-    }
     if (breakfast) {
       filterRooms = filterRooms.filter((room) => room.breakfast === breakfast);
     }
